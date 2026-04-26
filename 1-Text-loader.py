@@ -6,12 +6,12 @@ loader = TextLoader('Data/cricket.txt', encoding='utf-8')
 #This load function always returns a list of documents because it is assumed that user always loads a bunch of files and not a single one
 docs = loader.load()
 
-# print("\n=====quick demo view==========\n")
-# print("This shows the actual document list object : \n ", docs)
+print("\n=====quick demo view==========\n")
+print("This shows the actual document list object : \n ", docs)
 
-# print("\n This shows the type of document :  ", type(docs))
-# print("\n The length of the list is : ", len(docs))
-# print("\n The content of the 1st element of the list : \n", docs[0])
+print("\n This shows the type of document :  ", type(docs))
+print("\n The length of the list is : ", len(docs))
+print("\n The content of the 1st element of the list : \n", docs[0])
 
 #Lets try to use this document object
 from langchain_openai import ChatOpenAI
